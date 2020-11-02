@@ -14,22 +14,25 @@ int main()
         {
             a[i] = 0;
         }
-        // totalNum += a[i];
+        totalNum += a[i];
     }
 
-    // if I know the total number
-    // if (totalNum - 50 == 5000)
-    // {
-    //     cout << "50" << endl;
-    // }
-    // else if (totalNum % 100 == 0)
-    // {
-    //     cout << "100" << endl;
-    // }
-    // else
-    // {
-    //     totalNum -= 50;
-    //     int missingPair = totalNum % 100;
-    //     cout << 100 - missingPair << endl;
-    // }
+    // so I actually found the good answer but not the best one
+    // the best one uses the formulat n(n + 1)/2, so it will run for everything else
+    // but mine is pretty awesome.
+    // if I know the total number //edit actually I do
+    if (totalNum - 50 == 5000)
+    {
+        cout << "50" << endl;
+    }
+    else if (totalNum % 100 == 0)
+    {
+        cout << "100" << endl;
+    }
+    else
+    {
+        totalNum -= 50;
+        int missingPair = totalNum % 100;
+        cout << 100 - missingPair << endl;
+    }
 }
